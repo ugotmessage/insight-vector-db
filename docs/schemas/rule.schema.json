@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rule Card",
+  "type": "object",
+  "required": ["card_type", "rule_id", "rule_text", "supporting_cards", "status", "created_at"],
+  "properties": {
+    "card_type": { "const": "rule" },
+    "rule_id": { "type": "string" },
+    "rule_name": { "type": ["string", "null"] },
+    "topic_tags": { "type": "array", "items": { "type": "string" } },
+    "market_region": { "type": ["string", "null"] },
+    "asset_scope": { "type": ["string", "null"] },
+    "rule_type": { "type": ["string", "null"] },
+    "rule_text": { "type": "string" },
+    "rule_logic": { "type": "array", "items": { "type": "string" } },
+    "trigger_conditions": { "type": "array", "items": { "type": "string" } },
+    "invalid_conditions": { "type": "array", "items": { "type": "string" } },
+    "supporting_cards": { "type": "array", "items": { "type": "string" } },
+    "support_count": { "type": ["integer", "null"] },
+    "conflict_count": { "type": ["integer", "null"] },
+    "confidence_score": { "type": ["number", "null"] },
+    "status": { "type": "string", "enum": ["active", "weak", "invalidated"] },
+    "created_at": { "type": "string" }
+  }
+}
