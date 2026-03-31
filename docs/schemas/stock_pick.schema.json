@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stock Pick Card",
+  "type": "object",
+  "required": ["card_type", "pick_id", "source_ref_type", "source_ref_id", "speaker_name", "ticker_or_company", "recommendation_type", "rationale", "time_horizon", "status", "created_at"],
+  "properties": {
+    "card_type": { "const": "stock_pick" },
+    "pick_id": { "type": "string" },
+    "source_ref_type": { "type": "string", "enum": ["raw_source", "episode", "article", "transcript", "youtube_video", "analyst_report"] },
+    "source_ref_id": { "type": "string" },
+    "speaker_id": { "type": ["string", "null"] },
+    "speaker_name": { "type": "string" },
+    "role": { "type": ["string", "null"] },
+    "ticker_or_company": { "type": "string" },
+    "market": { "type": ["string", "null"] },
+    "recommendation_type": { "type": "string", "enum": ["buy", "accumulate", "watchlist", "hold", "avoid", "sell", "trim"] },
+    "conviction": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] },
+    "time_horizon": { "type": "string", "enum": ["intraday", "1-5d", "1-4w", "1-3m", "3-12m", "long_term", "unknown"] },
+    "entry_logic": { "type": "array", "items": { "type": "string" } },
+    "exit_logic": { "type": "array", "items": { "type": "string" } },
+    "risk_controls": { "type": "array", "items": { "type": "string" } },
+    "target_conditions": { "type": "array", "items": { "type": "string" } },
+    "rationale": { "type": "array", "items": { "type": "string" } },
+    "fact_vs_opinion": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "type": { "type": "string", "enum": ["fact", "opinion"] }
+        },
+        "required": ["text", "type"]
+      }
+    },
+    "raw_excerpt": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["active", "watching", "expired", "invalidated", "hit_target", "stopped_out"] },
+    "created_at": { "type": "string" }
+  }
+}
