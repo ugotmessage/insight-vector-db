@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Raw Source Card",
+  "type": "object",
+  "required": ["card_type", "raw_id", "source_type", "source_name", "source_date", "content_path", "created_at"],
+  "properties": {
+    "card_type": { "const": "raw_source" },
+    "raw_id": { "type": "string" },
+    "source_type": { "type": "string", "enum": ["video_transcript", "article", "podcast", "broker_report", "news", "social_post", "user_note", "mixed"] },
+    "source_name": { "type": "string" },
+    "source_date": { "type": "string" },
+    "title": { "type": ["string", "null"] },
+    "speakers": { "type": "array", "items": { "type": "string" } },
+    "content_path": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true },
+    "created_at": { "type": "string" }
+  }
+}
