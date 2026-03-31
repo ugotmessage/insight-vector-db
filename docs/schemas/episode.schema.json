@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Episode Card",
+  "type": "object",
+  "required": ["card_type", "episode_id", "raw_id", "program_name", "episode_date", "created_at"],
+  "properties": {
+    "card_type": { "const": "episode" },
+    "episode_id": { "type": "string" },
+    "raw_id": { "type": "string" },
+    "program_name": { "type": "string" },
+    "episode_date": { "type": "string" },
+    "title": { "type": ["string", "null"] },
+    "speakers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "speaker_id": { "type": "string" },
+          "speaker_name": { "type": ["string", "null"] },
+          "role": { "type": ["string", "null"] }
+        },
+        "required": ["speaker_id"]
+      }
+    },
+    "main_topics": { "type": "array", "items": { "type": "string" } },
+    "mentioned_entities": { "type": "array", "items": { "type": "string" } },
+    "episode_summary": { "type": ["string", "null"] },
+    "raw_structure_notes": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+    "created_at": { "type": "string" }
+  }
+}
