@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Valuation Brief Card",
+  "type": "object",
+  "required": ["card_type", "brief_id", "source_ref_ids", "ticker", "company_name", "rating", "one_line_conclusion", "created_at"],
+  "properties": {
+    "card_type": { "const": "valuation_brief" },
+    "brief_id": { "type": "string" },
+    "source_ref_ids": { "type": "array", "items": { "type": "string" } },
+    "ticker": { "type": "string" },
+    "company_name": { "type": "string" },
+    "base_price": { "type": ["number", "null"] },
+    "price_date": { "type": ["string", "null"] },
+    "price_source": { "type": ["string", "null"] },
+    "rating": { "type": "string", "enum": ["Strong Buy", "Buy", "Hold", "Sell", "Watchlist"] },
+    "one_line_conclusion": { "type": "string" },
+    "catalysts": { "type": "array", "items": { "type": "string" } },
+    "peer_benchmark": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": { "type": "string" },
+          "ticker": { "type": ["string", "null"] },
+          "pe": { "type": ["number", "null"] }
+        },
+        "required": ["company"]
+      }
+    },
+    "valuation_table": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fiscal_year": { "type": "string" },
+          "eps_estimate": { "type": ["number", "null"] },
+          "eps_basis": { "type": ["string", "null"] },
+          "eps_mode": { "type": ["string", "null"], "enum": ["sourced", "inferred", null] },
+          "target_pe": { "type": ["number", "null"] },
+          "target_price": { "type": ["number", "null"] },
+          "upside_pct": { "type": ["number", "null"] }
+        },
+        "required": ["fiscal_year"]
+      }
+    },
+    "peg_check": {
+      "type": "object",
+      "properties": {
+        "fy1_pe": { "type": ["number", "null"] },
+        "growth_rate_pct": { "type": ["number", "null"] },
+        "peg": { "type": ["number", "null"] },
+        "is_overheated": { "type": ["boolean", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "bull_case": { "type": "array", "items": { "type": "string" } },
+    "bear_case": { "type": "array", "items": { "type": "string" } },
+    "gap_analysis": {
+      "type": "object",
+      "properties": {
+        "market_noise": { "type": "array", "items": { "type": "string" } },
+        "market_miss": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "next_action": { "type": ["string", "null"] },
+    "priority_score": { "type": ["number", "null"] },
+    "why_now": { "type": "array", "items": { "type": "string" } },
+    "why_not_now": { "type": "array", "items": { "type": "string" } },
+    "report_markdown": { "type": ["string", "null"] },
+    "created_at": { "type": "string" }
+  }
+}
