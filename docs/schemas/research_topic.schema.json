@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Topic Card",
+  "type": "object",
+  "required": ["card_type", "topic_id", "topic_name", "origin_insight_ids", "status", "created_at"],
+  "properties": {
+    "card_type": { "const": "research_topic" },
+    "topic_id": { "type": "string" },
+    "topic_name": { "type": "string" },
+    "topic_aliases": { "type": "array", "items": { "type": "string" } },
+    "origin_insight_ids": { "type": "array", "items": { "type": "string" } },
+    "topic_tags": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string", "enum": ["watchlist", "researching", "promoted", "archived"] },
+    "priority": { "type": ["string", "null"], "enum": ["low", "medium", "high", null] },
+    "origin_reason": { "type": ["string", "null"] },
+    "seed_entities": { "type": "array", "items": { "type": "string" } },
+    "research_questions": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string" }
+  }
+}
