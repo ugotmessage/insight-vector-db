@@ -1,0 +1,18 @@
+{
+  "card_type": "research_topic",
+  "topic_id": "topic_probe_001",
+  "topic_name": "探針產業鏈",
+  "topic_aliases": ["probe card", "探針卡", "半導體測試介面"],
+  "origin_insight_ids": ["ins_001", "ins_002"],
+  "topic_tags": ["探針", "半導體測試", "AI"],
+  "status": "watchlist",
+  "priority": "medium",
+  "origin_reason": "近期見解卡多次提及 AI 晶片測試需求與探針相關供應鏈，具延伸研究價值。",
+  "seed_entities": ["旺矽", "雍智科技"],
+  "research_questions": [
+    "AI 晶片需求是否持續帶動探針與測試介面需求？",
+    "哪些公司是直接受益者？",
+    "是否存在尚未被充分定價的二線標的？"
+  ],
+  "created_at": "2026-03-28T20:00:00+08:00"
+}
