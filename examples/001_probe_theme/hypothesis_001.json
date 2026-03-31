@@ -1,0 +1,18 @@
+{
+  "card_type": "hypothesis",
+  "hypothesis_id": "hyp_probe_001",
+  "topic_id": "topic_probe_001",
+  "derived_from": ["ins_001", "cv_001"],
+  "hypothesis_text": "當 AI 晶片需求提升且市場開始討論測試與探針環節時，探針與測試介面相關公司在未來 20 至 60 個交易日相對大盤更容易出現超額報酬。",
+  "variables": {
+    "independent": ["AI晶片需求訊號", "測試題材討論度"],
+    "dependent": ["20d超額報酬", "60d超額報酬"],
+    "controls": ["大盤趨勢", "外資期貨部位", "估值水準"]
+  },
+  "validation_method": "event_study",
+  "expected_direction": "positive excess return",
+  "evaluation_window": "20d-60d",
+  "status": "pending",
+  "confidence": "medium",
+  "created_at": "2026-03-28T20:10:00+08:00"
+}
