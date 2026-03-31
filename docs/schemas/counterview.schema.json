@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Counterview Card",
+  "type": "object",
+  "required": ["card_type", "counterview_id", "linked_insight_id", "episode_id", "topic_tags", "counter_text", "created_at"],
+  "properties": {
+    "card_type": { "const": "counterview" },
+    "counterview_id": { "type": "string" },
+    "linked_insight_id": { "type": "string" },
+    "episode_id": { "type": "string" },
+    "raw_id": { "type": ["string", "null"] },
+    "speaker_id": { "type": ["string", "null"] },
+    "speaker_name": { "type": ["string", "null"] },
+    "topic_tags": { "type": "array", "items": { "type": "string" } },
+    "entity_mentions": { "type": "array", "items": { "type": "string" } },
+    "counter_text": { "type": "string" },
+    "logic_gaps": { "type": "array", "items": { "type": "string" } },
+    "risk_flags": { "type": "array", "items": { "type": "string" } },
+    "stance_against": { "type": ["string", "null"], "enum": ["bullish", "bearish", "neutral", "mixed", null] },
+    "confidence": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] },
+    "created_at": { "type": "string" }
+  }
+}
