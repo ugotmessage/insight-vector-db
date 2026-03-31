@@ -1,0 +1,23 @@
+{
+  "card_type": "rule",
+  "rule_id": "rule_ai_test_chain_001",
+  "rule_name": "AI需求向測試鏈外溢規則",
+  "topic_tags": ["AI供應鏈", "測試", "探針"],
+  "market_region": "TW",
+  "asset_scope": "sector",
+  "rule_type": "rotation_pattern",
+  "rule_text": "當 AI 晶片需求與複雜度提升時，市場資金除了聚焦核心晶片供應鏈，也可能逐步外溢至測試、探針與相關介面供應鏈。",
+  "rule_logic": [
+    "高複雜度晶片提升測試需求",
+    "測試鏈具供應鏈延伸受惠特性",
+    "市場題材擴散常由核心鏈外溢至次族群"
+  ],
+  "trigger_conditions": ["AI晶片需求升溫", "測試題材討論度提升"],
+  "invalid_conditions": ["市場已完全反映", "下游資本支出延後", "整體風險偏好顯著下降"],
+  "supporting_cards": ["ins_001", "cv_001", "hyp_probe_001"],
+  "support_count": 3,
+  "conflict_count": 1,
+  "confidence_score": 0.66,
+  "status": "active",
+  "created_at": "2026-04-05T10:00:00+08:00"
+}
