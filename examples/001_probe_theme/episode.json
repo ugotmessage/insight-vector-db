@@ -1,0 +1,23 @@
+{
+  "card_type": "episode",
+  "episode_id": "ep_pressplay_2026_03_28_pm",
+  "raw_id": "raw_pressplay_2026_03_28_pm",
+  "program_name": "PressPlay 午報",
+  "episode_date": "2026-03-28",
+  "title": "AI供應鏈與探針測試",
+  "speakers": [
+    { "speaker_id": "speaker_1", "speaker_name": "A分析師", "role": "guest" },
+    { "speaker_id": "speaker_2", "speaker_name": "B分析師", "role": "guest" }
+  ],
+  "main_topics": ["AI供應鏈", "探針產業鏈", "外資期貨"],
+  "mentioned_entities": ["旺矽", "雍智科技", "台積電"],
+  "episode_summary": "本集主要討論 AI 晶片需求外溢到測試環節的可能性，並延伸到探針與測試介面供應鏈。",
+  "raw_structure_notes": [
+    {
+      "segment_order": 1,
+      "segment_topic": "AI供應鏈延伸",
+      "segment_summary": "討論 AI 晶片需求是否外溢到測試與探針。"
+    }
+  ],
+  "created_at": "2026-03-28T12:10:00+08:00"
+}
