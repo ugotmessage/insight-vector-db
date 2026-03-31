@@ -1,0 +1,91 @@
+{
+  "card_type": "valuation_brief",
+  "brief_id": "vb_probe_001",
+  "source_ref_ids": [
+    "ins_001",
+    "cv_001",
+    "topic_probe_001",
+    "rep_001"
+  ],
+  "ticker": "6223.TW",
+  "company_name": "旺矽",
+  "base_price": 845.0,
+  "price_date": "2026-03-31",
+  "price_source": "market_data_api",
+  "rating": "Watchlist",
+  "one_line_conclusion": "探針與測試題材邏輯成立，但若以目前股價估算，短線上行空間已不算特別寬裕，更適合列入 watchlist 等待更佳風險報酬點。",
+  "catalysts": [
+    "AI 晶片與高階測試需求持續升溫",
+    "公司後續營收與接單更新",
+    "市場重新評價半導體測試鏈受惠程度"
+  ],
+  "peer_benchmark": [
+    {
+      "company": "FormFactor",
+      "ticker": "FORM",
+      "pe": 28.0
+    },
+    {
+      "company": "Technoprobe",
+      "ticker": null,
+      "pe": 24.0
+    }
+  ],
+  "valuation_table": [
+    {
+      "fiscal_year": "FY+1",
+      "eps_estimate": 27.5,
+      "eps_basis": "假設 AI 測試需求延續、營收年增 18%、獲利率小幅提升",
+      "eps_mode": "inferred",
+      "target_pe": 28.0,
+      "target_price": 770.0,
+      "upside_pct": -0.089
+    },
+    {
+      "fiscal_year": "FY+2",
+      "eps_estimate": 32.0,
+      "eps_basis": "假設測試需求續強、產品組合優化",
+      "eps_mode": "inferred",
+      "target_pe": 27.0,
+      "target_price": 864.0,
+      "upside_pct": 0.022
+    }
+  ],
+  "peg_check": {
+    "fy1_pe": 30.7,
+    "growth_rate_pct": 18.0,
+    "peg": 1.71,
+    "is_overheated": false
+  },
+  "bull_case": [
+    "AI 晶片複雜度提升，帶動探針與測試介面需求成長。",
+    "若市場重新認識半導體測試鏈的受惠程度，評價仍有上修空間。",
+    "公司位於相對直接的受益位置，具備題材正當性。"
+  ],
+  "bear_case": [
+    "以目前股價估算，FY+1 目標價低於現價，短線安全邊際有限。",
+    "若下游資本支出延後，需求轉化成獲利的速度可能低於預期。",
+    "若市場風險偏好轉弱，次族群評價容易先被壓縮。"
+  ],
+  "gap_analysis": {
+    "market_noise": [
+      "市場短線容易只追逐 AI 核心主鏈，而忽略測試鏈實際受惠節奏。"
+    ],
+    "market_miss": [
+      "若測試需求是中期而非短期事件，市場可能低估後續持續性。",
+      "但同時市場也可能高估短期獲利轉化速度。"
+    ]
+  },
+  "next_action": "move_to_watchlist",
+  "priority_score": 72.0,
+  "why_now": [
+    "主題有延續性，值得持續追蹤。",
+    "屬於 active research topic 的直接受益股。"
+  ],
+  "why_not_now": [
+    "現價距離合理估值空間不大。",
+    "更適合等拉回或等新數據驗證。"
+  ],
+  "report_markdown": null,
+  "created_at": "2026-03-31T22:50:00+08:00"
+}
