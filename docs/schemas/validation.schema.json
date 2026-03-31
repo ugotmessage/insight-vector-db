@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Validation Card",
+  "type": "object",
+  "required": ["card_type", "validation_id", "target_type", "target_id", "validation_method", "result", "created_at"],
+  "properties": {
+    "card_type": { "const": "validation" },
+    "validation_id": { "type": "string" },
+    "target_type": { "type": "string", "enum": ["hypothesis", "rule", "insight"] },
+    "target_id": { "type": "string" },
+    "validation_method": { "type": "string" },
+    "result": { "type": "string", "enum": ["success", "fail", "mixed", "inconclusive"] },
+    "metrics": { "type": "object", "additionalProperties": true },
+    "sample_count": { "type": ["integer", "null"] },
+    "failure_reasons": { "type": "array", "items": { "type": "string" } },
+    "conclusion": { "type": ["string", "null"] },
+    "follow_up_actions": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string" }
+  }
+}
