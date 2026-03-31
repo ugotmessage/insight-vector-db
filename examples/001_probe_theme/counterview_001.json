@@ -1,0 +1,21 @@
+{
+  "card_type": "counterview",
+  "counterview_id": "cv_001",
+  "linked_insight_id": "ins_001",
+  "episode_id": "ep_pressplay_2026_03_28_pm",
+  "raw_id": "raw_pressplay_2026_03_28_pm",
+  "speaker_id": "speaker_2",
+  "speaker_name": "B分析師",
+  "topic_tags": ["探針", "半導體測試"],
+  "entity_mentions": ["旺矽", "雍智科技"],
+  "counter_text": "探針需求雖有成長題材，但若市場已提前反映或下游資本支出不如預期，股價未必仍有足夠預期差。",
+  "logic_gaps": [
+    "市場可能已提前交易該題材",
+    "受惠程度未必均勻",
+    "需求成長不一定立刻反映到獲利"
+  ],
+  "risk_flags": ["估值偏高", "短期過熱", "資本支出延後"],
+  "stance_against": "bullish",
+  "confidence": "medium",
+  "created_at": "2026-03-28T12:17:00+08:00"
+}
