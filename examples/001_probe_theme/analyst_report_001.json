@@ -1,0 +1,70 @@
+{
+  "card_type": "analyst_report",
+  "report_id": "rep_001",
+  "source_ref_type": "episode",
+  "source_ref_id": "ep_pressplay_2026_03_28_pm",
+  "program_scope": "部分節目給使用者閱讀",
+  "report_type": "article_transcript_analysis",
+  "language": "zh-TW",
+  "executive_summary": "本集核心在於 AI 晶片複雜度提升可能帶動測試與探針需求，但短線股價表現仍受外資期貨部位與市場風險偏好影響。整體偏向中期可追蹤、短線需看盤勢配合。",
+  "key_data_metrics": [
+    {
+      "metric_name": "時間區間",
+      "metric_value": "1-3m",
+      "unit": null,
+      "context": "講者對探針鏈的中期追蹤視角",
+      "fact_or_opinion": "opinion",
+      "speaker": "A分析師"
+    },
+    {
+      "metric_name": "短線觀察區間",
+      "metric_value": "1-5d",
+      "unit": null,
+      "context": "講者對外資期貨壓抑追價意願的短線視角",
+      "fact_or_opinion": "opinion",
+      "speaker": "B分析師"
+    }
+  ],
+  "bull_case": [
+    "分析師認為 AI 晶片複雜度提高，將同步帶動半導體測試需求。",
+    "分析師認為探針屬測試關鍵介面，具供應鏈延伸受惠特性。",
+    "講者提到市場對探針鏈的討論仍未完全擴散，可能存在後續關注空間。"
+  ],
+  "bear_case_risks": [
+    "分析師提醒若市場已提前反映題材，股價未必仍有足夠預期差。",
+    "講者指出下游資本支出若不如預期，需求成長不一定立即轉化為獲利。",
+    "短線上若外資期貨空單續增，追價意願可能受壓抑。"
+  ],
+  "key_opinions": [
+    {
+      "speaker_id": "speaker_1",
+      "speaker_name": "A分析師",
+      "role": "guest",
+      "core_opinions": [
+        "認為 AI 晶片複雜度提升有利測試與探針需求。",
+        "認為探針鏈具中期追蹤價值。"
+      ]
+    },
+    {
+      "speaker_id": "speaker_2",
+      "speaker_name": "B分析師",
+      "role": "guest",
+      "core_opinions": [
+        "認為即使題材正確，短線仍須看外資期貨與市場風險偏好。",
+        "提醒探針題材可能已有部分反映，估值與 timing 不能忽略。"
+      ]
+    }
+  ],
+  "fact_vs_opinion_notes": [
+    "AI 晶片複雜度提升是否必然帶動探針鏈獲利，屬分析師觀點，不是既成事實。",
+    "外資期貨空單壓抑短線追價意願，屬對盤勢的推論與經驗判斷。"
+  ],
+  "trading_takeaways": [
+    "若要操作探針題材，較適合先列入中期研究名單，而非單靠題材立即追價。",
+    "短線進場需同步觀察外資期貨部位、整體風險偏好與是否已有過熱現象。",
+    "標的若屬直接受益鏈，可先做公司角色拆分，再決定是否納入候選股池。"
+  ],
+  "mentioned_tickers_or_targets": ["旺矽", "雍智科技"],
+  "rendered_report_markdown": null,
+  "created_at": "2026-03-28T20:20:00+08:00"
+}
