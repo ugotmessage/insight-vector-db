@@ -1,0 +1,24 @@
+{
+  "card_type": "insight",
+  "insight_id": "ins_001",
+  "episode_id": "ep_pressplay_2026_03_28_pm",
+  "raw_id": "raw_pressplay_2026_03_28_pm",
+  "speaker_id": "speaker_1",
+  "speaker_name": "A分析師",
+  "topic_tags": ["探針", "半導體測試", "AI"],
+  "entity_mentions": ["旺矽", "雍智科技"],
+  "insight_type": "sector_view",
+  "stance": "bullish",
+  "time_horizon": "1-3m",
+  "insight_text": "AI 晶片複雜度提升將推升半導體測試與探針相關需求，探針鏈具有中期追蹤價值。",
+  "reasoning": [
+    "測試需求與晶片複雜度同步提高",
+    "探針屬測試環節關鍵介面",
+    "市場討論度仍未完全擴散"
+  ],
+  "risk_factors": ["題材提前反映", "受惠程度不均"],
+  "raw_excerpt": "AI 晶片越複雜，後面測試跟 probe card 這塊會越重要。",
+  "quality_score": 0.5,
+  "confidence": "medium",
+  "created_at": "2026-03-28T12:15:00+08:00"
+}
