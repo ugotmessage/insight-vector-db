@@ -1,0 +1,24 @@
+{
+  "card_type": "insight",
+  "insight_id": "ins_002",
+  "episode_id": "ep_pressplay_2026_03_28_pm",
+  "raw_id": "raw_pressplay_2026_03_28_pm",
+  "speaker_id": "speaker_2",
+  "speaker_name": "B分析師",
+  "topic_tags": ["外資期貨", "短線盤勢", "AI供應鏈"],
+  "entity_mentions": ["台積電"],
+  "insight_type": "flow_view",
+  "stance": "neutral",
+  "time_horizon": "1-5d",
+  "insight_text": "即使 AI 題材延續，若外資期貨空單續增，短線盤勢仍可能壓抑相關族群追價意願。",
+  "reasoning": [
+    "短線資金風險偏好受期貨籌碼影響",
+    "題材與盤面強弱不一定同步",
+    "追價意願可能先受壓抑"
+  ],
+  "risk_factors": ["題材延續但盤勢轉弱", "短線風險偏好下降"],
+  "raw_excerpt": "就算題材對，外資期貨如果持續加空，短線也未必好做。",
+  "quality_score": 0.52,
+  "confidence": "medium",
+  "created_at": "2026-03-28T12:16:00+08:00"
+}
