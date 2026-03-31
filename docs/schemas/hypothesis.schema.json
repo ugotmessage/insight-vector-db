@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hypothesis Card",
+  "type": "object",
+  "required": ["card_type", "hypothesis_id", "hypothesis_text", "status", "created_at"],
+  "properties": {
+    "card_type": { "const": "hypothesis" },
+    "hypothesis_id": { "type": "string" },
+    "topic_id": { "type": ["string", "null"] },
+    "derived_from": { "type": "array", "items": { "type": "string" } },
+    "hypothesis_text": { "type": "string" },
+    "variables": {
+      "type": "object",
+      "properties": {
+        "independent": { "type": "array", "items": { "type": "string" } },
+        "dependent": { "type": "array", "items": { "type": "string" } },
+        "controls": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "validation_method": { "type": ["string", "null"] },
+    "expected_direction": { "type": ["string", "null"] },
+    "evaluation_window": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["pending", "validating", "confirmed", "rejected", "mixed"] },
+    "confidence": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] },
+    "created_at": { "type": "string" }
+  }
+}
