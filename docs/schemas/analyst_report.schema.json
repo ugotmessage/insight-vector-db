@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analyst Report Card",
+  "type": "object",
+  "required": ["card_type", "report_id", "source_ref_type", "source_ref_id", "report_type", "language", "executive_summary", "created_at"],
+  "properties": {
+    "card_type": { "const": "analyst_report" },
+    "report_id": { "type": "string" },
+    "source_ref_type": { "type": "string", "enum": ["raw_source", "episode", "article", "transcript", "youtube_video"] },
+    "source_ref_id": { "type": "string" },
+    "program_scope": { "type": ["string", "null"] },
+    "report_type": { "type": "string", "enum": ["youtube_standard_analysis", "article_transcript_analysis"] },
+    "language": { "type": "string", "enum": ["zh-TW"] },
+    "executive_summary": { "type": "string" },
+    "key_data_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metric_name": { "type": "string" },
+          "metric_value": { "type": ["string", "number", "null"] },
+          "unit": { "type": ["string", "null"] },
+          "context": { "type": ["string", "null"] },
+          "fact_or_opinion": { "type": "string", "enum": ["fact", "opinion"] },
+          "speaker": { "type": ["string", "null"] }
+        },
+        "required": ["metric_name", "fact_or_opinion"]
+      }
+    },
+    "bull_case": { "type": "array", "items": { "type": "string" } },
+    "bear_case_risks": { "type": "array", "items": { "type": "string" } },
+    "key_opinions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "speaker_id": { "type": ["string", "null"] },
+          "speaker_name": { "type": ["string", "null"] },
+          "role": { "type": ["string", "null"] },
+          "core_opinions": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["core_opinions"]
+      }
+    },
+    "fact_vs_opinion_notes": { "type": "array", "items": { "type": "string" } },
+    "trading_takeaways": { "type": "array", "items": { "type": "string" } },
+    "mentioned_tickers_or_targets": { "type": "array", "items": { "type": "string" } },
+    "rendered_report_markdown": { "type": ["string", "null"] },
+    "created_at": { "type": "string" }
+  }
+}
