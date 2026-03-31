@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Insight Card",
+  "type": "object",
+  "required": ["card_type", "insight_id", "episode_id", "raw_id", "speaker_id", "topic_tags", "insight_type", "stance", "insight_text", "created_at"],
+  "properties": {
+    "card_type": { "const": "insight" },
+    "insight_id": { "type": "string" },
+    "episode_id": { "type": "string" },
+    "raw_id": { "type": "string" },
+    "speaker_id": { "type": "string" },
+    "speaker_name": { "type": ["string", "null"] },
+    "topic_tags": { "type": "array", "items": { "type": "string" } },
+    "entity_mentions": { "type": "array", "items": { "type": "string" } },
+    "insight_type": { "type": "string", "enum": ["stock_view", "sector_view", "macro_view", "flow_view", "risk_view", "event_interpretation", "trading_observation"] },
+    "stance": { "type": "string", "enum": ["bullish", "bearish", "neutral", "mixed"] },
+    "time_horizon": { "type": ["string", "null"] },
+    "insight_text": { "type": "string" },
+    "reasoning": { "type": "array", "items": { "type": "string" } },
+    "risk_factors": { "type": "array", "items": { "type": "string" } },
+    "raw_excerpt": { "type": ["string", "null"] },
+    "quality_score": { "type": ["number", "null"] },
+    "confidence": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] },
+    "created_at": { "type": "string" }
+  }
+}
