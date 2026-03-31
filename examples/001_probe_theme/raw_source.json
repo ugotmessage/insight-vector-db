@@ -1,0 +1,15 @@
+{
+  "card_type": "raw_source",
+  "raw_id": "raw_pressplay_2026_03_28_pm",
+  "source_type": "video_transcript",
+  "source_name": "PressPlay 午報",
+  "source_date": "2026-03-28",
+  "title": "2026-03-28 午報：AI供應鏈與探針測試",
+  "speakers": ["speaker_1", "speaker_2"],
+  "content_path": "data/raw/pressplay_2026_03_28_pm.txt",
+  "metadata": {
+    "platform": "PressPlay",
+    "language": "zh-TW"
+  },
+  "created_at": "2026-03-28T12:00:00+08:00"
+}
